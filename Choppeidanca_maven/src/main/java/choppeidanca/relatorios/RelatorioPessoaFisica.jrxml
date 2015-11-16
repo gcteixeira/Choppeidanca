@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-11-23T16:12:26 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioPessoaFisica" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8c44ff46-4f74-4033-99e5-0eaa72ee510f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Choppeidanca"/>
+	<queryString language="SQL">
+		<![CDATA[select     coalesce(nome,'') as nome,
+           coalesce(apelido,'') as apelido,
+            coalesce(telefone,'') as Telefone,
+            case when tipo = 0 then 'Fisica' when tipo = 1 then 'Juridica' else 'indefinido' END as tipo,
+            coalesce(cpfcnpj,'')cnpj,
+            coalesce(rginscricao,'') as rg,
+            to_char(datanasc ,'dd-mm-yyyy') as datanacimento
+  from pessoa
+where  tipo = 0]]>
+	</queryString>
+	<field name="nome" class="java.lang.String"/>
+	<field name="apelido" class="java.lang.String"/>
+	<field name="telefone" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.String"/>
+	<field name="cnpj" class="java.lang.String"/>
+	<field name="rg" class="java.lang.String"/>
+	<field name="datanacimento" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="306" y="37" width="70" height="20" uuid="2a00cc49-21ea-40b5-acda-4bd8c24b36ba"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Carlos gomes ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="36" width="23" height="21" uuid="c2dbea37-3f49-4f17-934e-39a307982bac"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="79" width="165" height="19" uuid="2556cc13-d357-4a51-83f1-3e8bd18516c6"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[atendimento@choppeidanca.com.br]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="79" width="33" height="20" uuid="8103fe5c-7c95-4566-8099-edbba35b1c87"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="58" width="47" height="19" uuid="4c3abfb3-3841-4888-a0fa-6d5c91e989ff"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="9" width="170" height="90" uuid="2fb20d1a-701c-4c1d-b710-ec5f74cf4e5b"/>
+				<imageExpression><![CDATA["D:/eclipse/workspace/RemoteSystemsTempFiles/Choppeidanca/src/img.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="104" width="554" height="19" uuid="b6c1d303-9a1a-41d1-9802-d44061e44552"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio com todos os dados do cadastro de pessoa fisica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="36" width="50" height="18" uuid="b6172177-54ac-44df-851d-d224cf8a1567"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Cascavel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="15" width="46" height="21" uuid="4e6610c1-c8fa-4dfc-808d-2b18adec8de1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="37" width="30" height="20" uuid="5f073715-3f08-43ab-a525-094e35953506"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[2685]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="57" width="51" height="20" uuid="98fd8c7c-5d1e-45d6-82ea-91a8c246971a"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[3368-8866]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="37" width="16" height="20" uuid="eba404bb-1bab-4c91-90f0-6892f5d9c17b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="57" width="49" height="20" uuid="0303d1ac-0e67-4f95-8715-23eaf337fc65"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="15" width="217" height="21" uuid="b2c0e7c9-e054-4be4-a38d-d33fa67d52f8"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Choppeidanca distribuidora de bebidas ltda me]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="36" width="44" height="18" uuid="87321137-7854-4a6a-815d-2a1a0abfaab2"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="58" width="52" height="19" uuid="44c555be-c6e2-4778-a963-70fce7a5d904"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[9965-4663]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-1" y="122" width="555" height="1" uuid="4c3054fc-c64d-4ebc-bf50-69f1a65a058c"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<line>
+				<reportElement x="496" y="23" width="59" height="1" uuid="2677876f-eb4d-4bf1-98e7-5226cdbffe31"/>
+			</line>
+			<staticText>
+				<reportElement x="164" y="8" width="60" height="15" uuid="b455e0a4-93b1-4390-a21b-df11dee07380"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="8" width="60" height="15" uuid="82ce24a0-20f2-4b64-8515-89b7f05188cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RG / Inscrição]]></text>
+			</staticText>
+			<line>
+				<reportElement x="83" y="23" width="59" height="1" uuid="99b8b0aa-d0dc-4acc-af42-35c0a85935d3"/>
+			</line>
+			<line>
+				<reportElement x="164" y="23" width="59" height="1" uuid="adee0afc-c8f5-45ab-815e-ec864e277322"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="8" width="60" height="15" uuid="9776c389-3f1f-404e-8c1a-31d9463ae71e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="8" width="60" height="15" uuid="daab6dcb-0d9a-4ba1-a55c-676d2170f49a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apelido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="8" width="59" height="14" uuid="3c40b336-1868-4bd4-9fa6-90719d1cf60d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CFP / CNPJ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="414" y="23" width="59" height="1" uuid="ae467eaa-f1f2-4198-86c4-9595de68b2cb"/>
+			</line>
+			<staticText>
+				<reportElement x="495" y="7" width="59" height="16" uuid="ff270245-355a-463f-8d5d-3040b0ec09bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Nasc.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="60" height="1" uuid="60d7378a-af83-4ba4-a499-27879de594f7"/>
+			</line>
+			<line>
+				<reportElement x="328" y="23" width="59" height="1" uuid="f5c5c752-4bb5-4776-9173-c219c927936f"/>
+			</line>
+			<staticText>
+				<reportElement x="238" y="9" width="80" height="15" uuid="8d7739bb-b8c7-4123-9358-d1814c6e0a43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo de Pessoa]]></text>
+			</staticText>
+			<line>
+				<reportElement x="239" y="23" width="77" height="1" uuid="35208d5c-f33a-40fb-9bf7-2e205572033e"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="58" height="20" uuid="9988975c-fe21-4f50-ab02-5489df34e3d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="64" height="20" uuid="8f5001d1-5ee1-44df-a573-9fc68eec4292"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apelido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="59" height="20" uuid="94b98662-dbd7-4302-9374-94a4c9f8dcee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="0" width="80" height="20" uuid="0660c73d-fde7-43a8-ada4-8ff161360df2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="61" height="20" uuid="71a0535d-30f4-4797-88a2-b860046f0830"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cnpj}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="59" height="20" uuid="432ffb87-7529-4f36-9c98-e71c04f93578"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="496" y="-1" width="59" height="21" uuid="ca57ae0b-0776-478f-8db5-47b9f494dd2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{datanacimento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="93" y="10" width="123" height="14" uuid="239d5bf9-f794-4b03-aa57-8770a8d7fe7c"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[RelatorioPessoaFisica]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="4" width="554" height="1" uuid="e0f49f5d-17af-4587-a428-1064422d0da3"/>
+			</line>
+			<staticText>
+				<reportElement x="128" y="24" width="100" height="14" uuid="a7b5c3f8-852e-4032-9d17-f037fb39a3ef"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[17/11/2014]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="9" width="95" height="15" uuid="6408015a-150f-4df9-9c3e-00f4a2216087"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do arquivo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="24" width="135" height="15" uuid="6d5728fc-31cd-4402-8893-5b8a75b11132"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data da ultima Alteração:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

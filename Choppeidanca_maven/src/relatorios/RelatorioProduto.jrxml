@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-11-19T00:53:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioProduto" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="75c73bc9-4add-458d-afa6-ff5f1eb76054">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Choppeidanca"/>
+	<queryString language="SQL">
+		<![CDATA[select   
+	coalesce(pr.produtonome,'') as nome,
+        case when pr.statusproduto = true then 'Ativo' when pr.statusproduto = false then 'Inativo' else 'indefinido' END as status ,
+        coalesce(ca.nome,'') as categoria    
+from produto pr
+     inner join categoria ca on (ca.idcategoria = pr.categoria_idcategoria)]]>
+	</queryString>
+	<field name="nome" class="java.lang.String"/>
+	<field name="status" class="java.lang.String"/>
+	<field name="categoria" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="126" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="104" width="554" height="19" uuid="5f9f3149-ff5b-47c1-9236-2e9908125110"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de totas os produtos cadastrados]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="125" width="555" height="1" uuid="4e019a2f-107b-47ae-8711-b24a171cc23d"/>
+			</line>
+			<staticText>
+				<reportElement x="334" y="58" width="52" height="19" uuid="b7968d44-499a-4a42-9fa5-3bf20a26bb20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[9965-4663]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="36" width="44" height="18" uuid="084b192d-0018-4098-8ca8-6a79955ef5ca"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="37" width="70" height="20" uuid="4cd31b8e-f614-4e62-b686-f797d43d16c2"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Carlos gomes ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="9" width="170" height="90" uuid="0fc5b38a-5fc7-4b68-9b98-9f804a2322c5"/>
+				<imageExpression><![CDATA["D:/eclipse/workspace/RemoteSystemsTempFiles/Choppeidanca/src/img.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="230" y="36" width="50" height="18" uuid="4768a8d2-1805-4910-b446-8b0d6b6f2459"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Cascavel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="15" width="217" height="21" uuid="de226863-4147-486f-b4c1-df0b35cbe384"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Choppeidanca distribuidora de bebidas ltda me]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="58" width="47" height="19" uuid="468b1040-4f00-42b1-8a19-52f14e466658"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="57" width="49" height="20" uuid="ab21cd60-6326-4670-9f88-9ff00e2555e3"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="79" width="33" height="20" uuid="3fe27a2c-846d-41c4-89a5-46c6a73d406c"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="36" width="23" height="21" uuid="d1b9d9d2-d9ba-4ae4-b080-a25c11adef4b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="37" width="16" height="20" uuid="a46e1661-9a09-4b7b-9036-873fb8209d41"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="15" width="46" height="21" uuid="8aa32ffa-f034-4e24-b210-c833ab9eed89"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="37" width="30" height="20" uuid="569a7e22-3154-4203-a6c5-61100a680cfc"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[2685]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="79" width="165" height="19" uuid="af8d8bd9-f47e-43c1-b55c-347c39dbcec0"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[atendimento@choppeidanca.com.br]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="57" width="51" height="20" uuid="d4a311a5-851c-4b22-9755-bb36dc590371"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[3368-8866]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<line>
+				<reportElement x="191" y="23" width="179" height="1" uuid="ea9a02ff-36c4-4613-bef1-bfe0484ff2bd"/>
+			</line>
+			<staticText>
+				<reportElement x="190" y="9" width="179" height="15" uuid="a739f9e1-4c48-492a-96c1-d5b3c410c828"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Categoria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="8" width="167" height="15" uuid="037f6c88-9380-4346-a21e-f7b704f0e0ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Situação]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="8" width="179" height="15" uuid="342a826c-513c-498c-8291-51e0b69b3edc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Produto]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="179" height="1" uuid="bbd562b8-252c-48e3-ba6e-8b27b9d989ac"/>
+			</line>
+			<line>
+				<reportElement x="386" y="23" width="168" height="1" uuid="ed822345-7773-4491-90f6-4417110cf6b2"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="2" y="0" width="177" height="20" uuid="5f2d34c0-a12d-4b64-9c18-5edf39a7306f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="0" width="167" height="20" uuid="a7f0b999-f1cf-466a-afea-39c6f0f23df4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="-1" width="180" height="21" uuid="ffe07c70-6d22-4670-b277-8f8ba13ed8bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{categoria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="39" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="4" width="554" height="1" uuid="9d2e1f97-5529-4a05-b5df-499dcd4970ba"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="9" width="95" height="15" uuid="08c47483-71d4-4f04-80c6-4a9d8c12163d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do arquivo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="24" width="135" height="15" uuid="a7708954-af8d-4323-9ada-e3abed268ad7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data da ultima Alteração:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="24" width="100" height="14" uuid="39ce0f48-90b7-4a69-83f5-cda2bf9eb9a9"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[17/11/2014]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="10" width="123" height="14" uuid="8afb20a8-00f2-493f-876d-df46acfe18eb"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[RelatorioProduto]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

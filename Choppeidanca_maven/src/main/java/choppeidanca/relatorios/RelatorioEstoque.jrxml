@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-11-23T16:52:51 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioEstoque" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a31c4e4f-f541-4736-9bca-4363fb8bd58b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Choppeidanca"/>
+	<queryString language="SQL">
+		<![CDATA[select produtonome as Produto,
+       qtdestoque as estoque
+from  produto]]>
+	</queryString>
+	<field name="produto" class="java.lang.String"/>
+	<field name="estoque" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="126" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="36" width="44" height="18" uuid="470ee25e-ae9d-407e-a7b7-af656a12b957"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="36" width="23" height="21" uuid="399e3274-2f06-46bf-bc8f-fd41ed0b84ff"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="58" width="52" height="19" uuid="ef019862-4344-43b7-b522-f2203657833b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[9965-4663]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="37" width="16" height="20" uuid="0545b3cb-26a5-49f7-b630-4ddc03fcd303"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="15" width="46" height="21" uuid="da643c2c-704d-4fbd-af96-a4195547e6dc"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="125" width="555" height="1" uuid="76afa455-ec97-45fc-b8a0-7c11d84ecf58"/>
+			</line>
+			<staticText>
+				<reportElement x="236" y="57" width="51" height="20" uuid="5e59a24e-8d2e-470f-902d-11a9576482a6"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[3368-8866]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="36" width="50" height="18" uuid="3e4f9e68-15e5-4bd9-b9fd-dbf01422316f"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Cascavel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="79" width="33" height="20" uuid="26e2daa3-a302-4d30-bee4-b6b77dec3b10"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="9" width="170" height="90" uuid="202a7fa9-f860-4713-8fa8-1dd49edb6f10"/>
+				<imageExpression><![CDATA["D:/eclipse/workspace/RemoteSystemsTempFiles/Choppeidanca/src/img.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="293" y="58" width="47" height="19" uuid="90a8c07b-dee0-43e9-aa4f-240d364d16c7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="104" width="554" height="19" uuid="8e721dfe-b4fd-4dea-98dc-5be10f2650f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de Estoque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="15" width="217" height="21" uuid="688b0089-87b0-4426-94e4-a48ae193186e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Choppeidanca distribuidora de bebidas ltda me]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="306" y="37" width="70" height="20" uuid="839c0eca-1781-4c1a-9722-c549945d234c"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Carlos gomes ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="79" width="165" height="19" uuid="c48a44dd-783a-40b1-a1c5-2d9250dbbe47"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[atendimento@choppeidanca.com.br]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="37" width="30" height="20" uuid="8cb235dd-6990-45c7-b855-4f5fac111cb1"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[2685]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="57" width="49" height="20" uuid="5f8a4fbd-19c6-491b-ba82-9248dd9f71bf"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<line>
+				<reportElement x="41" y="23" width="179" height="1" uuid="d2e8aa8d-7b04-4f87-b000-67bd89543d75"/>
+			</line>
+			<line>
+				<reportElement x="330" y="23" width="179" height="1" uuid="511d27dd-4896-4ed5-9876-41892c5ee316"/>
+			</line>
+			<staticText>
+				<reportElement x="41" y="8" width="179" height="15" uuid="082f0078-0412-4a58-a38e-0cb0995a2034"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do Produto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="9" width="179" height="15" uuid="618108df-6967-466f-a669-ac8ed7e44e95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quantidade]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="0" width="180" height="20" uuid="2cf37bc0-35b8-488d-bae2-d535fa79aef6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{produto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="178" height="20" uuid="9470634d-7575-4be3-b4f8-71b3307d9573"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estoque}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="24" width="135" height="15" uuid="ca9416f2-5ad4-42fc-a26e-02a1d6f2b9c5"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data da ultima Alteração:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="24" width="100" height="14" uuid="c454c649-1536-42af-9d01-fcf1195f97fc"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[17/11/2014]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="4" width="554" height="1" uuid="a1c18f07-99db-44fe-8d6a-d4eaf4c3590e"/>
+			</line>
+			<staticText>
+				<reportElement x="93" y="10" width="123" height="14" uuid="d6e8c878-ff53-4a40-90ff-947a267fb2e3"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[RelatorioEstoque]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="9" width="95" height="15" uuid="a1f7f87b-4867-48ea-a359-dac4c1abf92f"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do arquivo:]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

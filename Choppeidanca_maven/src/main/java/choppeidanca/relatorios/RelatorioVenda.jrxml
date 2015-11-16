@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-11-23T16:52:39 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioVenda" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89113693-b60f-4aa2-90ae-397713dcff8b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Choppeidanca"/>
+	<queryString>
+		<![CDATA[select nome from cidade]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="126" splitType="Stretch">
+			<staticText>
+				<reportElement x="306" y="37" width="70" height="20" uuid="d5780b41-f4e2-4ab0-83fd-56d5ca543222"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Carlos gomes ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="283" y="36" width="23" height="21" uuid="16047cc5-2e11-42eb-a0ee-607f50fd06f4"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rua:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="224" y="79" width="165" height="19" uuid="e749d24b-cf8e-45f2-886d-01fe5ab0d717"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[atendimento@choppeidanca.com.br]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="125" width="555" height="1" uuid="46dc7462-7dd6-434b-94b2-50a9c18d6a0d"/>
+			</line>
+			<staticText>
+				<reportElement x="190" y="79" width="33" height="20" uuid="63abff92-3a22-4daf-97bc-76ed3712798f"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="293" y="58" width="47" height="19" uuid="b9c559c5-a04b-4d79-b59d-e5ce405665da"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Celular:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="9" width="170" height="90" uuid="a9eb32ef-524e-44af-9152-8be58d4b8351"/>
+				<imageExpression><![CDATA["D:/eclipse/workspace/RemoteSystemsTempFiles/Choppeidanca/src/img.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="104" width="554" height="19" uuid="bdc9339a-1cc2-4922-82da-3aff41dc98dd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio com todos os dados do cadastro de pessoa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="36" width="50" height="18" uuid="7b65c9da-bcdb-45fd-a934-f00b54ce280c"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Cascavel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="15" width="46" height="21" uuid="c407db75-4cdf-4f30-812f-d65b5ff91e8c"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="37" width="30" height="20" uuid="573448a0-9484-412e-95a8-2543c022b7ca"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[2685]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="57" width="51" height="20" uuid="ce05bef3-c8ae-4945-8281-92138dea9e98"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[3368-8866]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="37" width="16" height="20" uuid="59584433-bda3-4b04-be54-f2695b8c0ac2"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="57" width="49" height="20" uuid="76c2159b-70f5-4a63-b5b7-5dfa7a7632aa"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="15" width="217" height="21" uuid="d4170ea0-5c20-40ee-aeb4-c6f1f584a337"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Choppeidanca distribuidora de bebidas ltda me]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="36" width="44" height="18" uuid="fb1595da-f8af-46dc-946a-1cc77a318c42"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="58" width="52" height="19" uuid="fd18bc0a-1e4a-43a7-85d4-517a80dd71be"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[9965-4663]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<line>
+				<reportElement x="4" y="30" width="89" height="1" uuid="7e31bca4-52f3-4186-bb57-229f7959d2e3"/>
+			</line>
+			<line>
+				<reportElement x="475" y="30" width="79" height="1" uuid="9d719810-5007-4dc8-b708-b210c0eabf83"/>
+			</line>
+			<staticText>
+				<reportElement x="176" y="15" width="80" height="15" uuid="f46929e5-4663-475c-a75f-24e0311d4be8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Parcela]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="15" width="70" height="16" uuid="2c1683c2-3f51-450f-aeaf-96df1d894136"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nº Parcelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="274" y="15" width="81" height="15" uuid="6e8e8a37-409f-4f3e-bcb6-0cf4cf6e1f71"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="375" y="30" width="79" height="1" uuid="77cd972e-c0be-40a3-bbbc-14c18d1bc03c"/>
+			</line>
+			<staticText>
+				<reportElement x="4" y="15" width="89" height="15" uuid="0d262426-3ba0-4dd1-92a9-d45e1abad5d0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo de movimento]]></text>
+			</staticText>
+			<line>
+				<reportElement x="176" y="30" width="80" height="1" uuid="5cd01eb8-3516-42a7-ae8f-cc3662ed90c3"/>
+			</line>
+			<staticText>
+				<reportElement x="475" y="15" width="79" height="14" uuid="aff7f19e-26c3-46bf-8d7b-6ce3fe6f30ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Fatura]]></text>
+			</staticText>
+			<line>
+				<reportElement x="274" y="30" width="80" height="1" uuid="43acaf15-df18-41d8-aa56-8214e9cb1249"/>
+			</line>
+			<line>
+				<reportElement x="97" y="29" width="70" height="1" uuid="321a0ff1-0178-4942-b4a2-2681d4d0b13a"/>
+			</line>
+			<staticText>
+				<reportElement x="375" y="15" width="80" height="15" uuid="aa767709-1dc8-4806-9242-a88790e9c82a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Emissão]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="39" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="4" width="554" height="1" uuid="91d5b8ff-43fb-4549-b8f0-5db7a5c28fb9"/>
+			</line>
+			<staticText>
+				<reportElement x="5" y="9" width="95" height="15" uuid="d5b2248d-f461-4200-9aef-bc8ca99722e2"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do arquivo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="24" width="135" height="15" uuid="282e0dcd-eddc-43c8-ad9d-ed32f17c783d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data da ultima Alteração:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="10" width="123" height="14" uuid="de56efe4-6844-4307-8dfc-c1aed092f36b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[RelatorioDeContas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="24" width="100" height="14" uuid="40d029f1-56a2-4d23-9c8a-091c2d15971e"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[17/11/2014]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
