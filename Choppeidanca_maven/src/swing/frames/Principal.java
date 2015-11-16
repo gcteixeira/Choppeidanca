@@ -17,7 +17,7 @@ import java.awt.Dimension;
 public class Principal extends JFrame {
 
 	private JPanel contentPane;
-
+]
 	/**
 	 * Launch the application.
 	 */
