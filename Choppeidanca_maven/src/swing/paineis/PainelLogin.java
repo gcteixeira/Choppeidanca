@@ -167,7 +167,7 @@ public class PainelLogin extends JPanel {
 
 								} else {
 									JOptionPane.showMessageDialog(null,
-											"Usuário ou senha incorretos", "Falha no Login", 1);
+											"Usuï¿½rio ou senha incorretos", "Falha no Login", 1);
 								}
 
 							}
@@ -194,16 +194,16 @@ public class PainelLogin extends JPanel {
 
 	}
 
-	// Declaracao da imagem
-	//private Image img = new ImageIcon(getClass().getResource(
-	//		"/choppeidanca/imagens/img.jpg")).getImage();
+    // Declaracao da imagem
+//private Image img = new ImageIcon(getClass().getResource(
+//		"/choppeidanca/imagens/img.png")).getImage();
 
 //	@Override
 //	protected void paintComponent(Graphics g) {
 //
 //		Graphics2D g2 = (Graphics2D) g.create();
 //
-//		g2.setColor(Color.BLACK);
+//		g2.setColor(Color.RGBtoHSB(2, 98, 146, null));
 //		g2.fillRect(0, 0, getWidth() - 1, getHeight() - 1);
 //		int metadeLarguraPainel = getWidth() / 2;
 //		int metadeAlturaPainel = getHeight() / 2;
